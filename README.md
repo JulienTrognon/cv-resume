@@ -1,6 +1,9 @@
 Web CV Resume
 ------------------------
 
+Personal CV made with source code instead of Word, Indesign, or Photoshop.
+The goal is to make it easier to edit and share as well as to improve my skills.
+
 ![preview CV](preview.jpg)
 
 ## Web CV

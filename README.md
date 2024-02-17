@@ -1,6 +1,8 @@
 Web CV Resume downloadable PDF
 ------------------------
 
+![preview CV](preview.jpg)
+
 ## Responsive Resume Cv Smith
 
 - Responsive Resume CV Website Using HTML CSS and JavaScript
@@ -13,5 +15,6 @@ Web CV Resume downloadable PDF
 
 
 ## Credit
+
 Made using [Bedimcode](https://github.com/bedimcode) template
 and his [Youtube](https://youtu.be/oYjseP_Qhv4) tutorial.

@@ -1,465 +1,735 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--========== FAVICON ==========-->
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--========== FAVICON ==========-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-        <!--========== ONLINE ICONS ==========-->
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--========== ONLINE ICONS ==========-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive resume cv</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Jlntrog</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bxs-home nav__icon'></i>Home
-                            </a>
-                        </li>
+    <title>À Propos de</title>
+  </head>
+  <body>
+  <!-- <body class="scale-cv"> -->
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class='bx bxs-home nav__icon'></i>Accueil
+              </a>
+            </li>
 
-                        <li class="nav__item">
-                            <a href="#profile" class="nav__link">
-                                <i class='bx bxs-user nav__icon' ></i>Profile
-                            </a>
-                        </li>
+            <!-- <li class="nav__item">
+              <a href="#social" class="nav__link">
+                <i class='bx bxs-network-chart nav__icon'></i>Réseaux
+              </a>
+            </li> -->
 
-                        <li class="nav__item">
-                            <a href="#education" class="nav__link">
-                                <i class='bx bxs-graduation nav__icon' ></i>Education
-                            </a>
-                        </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class='bx bxs-face nav__icon' ></i>Profil
+              </a>
+            </li>
 
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bxs-cog nav__icon'></i>Skills
-                            </a>
-                        </li>
+            <li class="nav__item">
+              <a href="#languages" class="nav__link">
+                <i class='bx bxs-conversation nav__icon'></i>Langues
+              </a>
+            </li>
 
-                        <li class="nav__item">
-                            <a href="#experience" class="nav__link">
-                                <i class='bx bxs-briefcase-alt-2 nav__icon' ></i>Experience
-                            </a>
-                        </li>
+            <li class="nav__item">
+              <a href="#interests" class="nav__link">
+                <i class='bx bxs-heart nav__icon'></i>Centres d'Intérêt
+              </a>
+            </li>
 
-                        <li class="nav__item">
-                            <a href="#certificates" class="nav__link">
-                                <i class='bx bxs-medal nav__icon' ></i>Certificates
-                            </a>
-                        </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class='bx bxs-book nav__icon' ></i>Formation
+              </a>
+            </li>
 
-                        <li class="nav__item">
-                            <a href="#references" class="nav__link">
-                                <i class='bx bx-link-alt nav__icon'></i>References
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class='bx bxs-briefcase-alt-2 nav__icon' ></i>Expérience
+              </a>
+            </li>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bxs-grid-alt'></i>
-                </div>
-            </nav>
-        </header>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class='bx bxs-cog nav__icon'></i>Compétences
+              </a>
+            </li>
 
-        <main class="l-main bd-container">
-            <!-- All elements within this div is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        <h2 class="home__container section bd-grid">
-                            <div class="home__data bd-grid">
-                                <img src="assets/img/profilepic.jpg" alt="profile picture" class="home__img">
+            <li class="nav__item">
+              <a href="#softskills" class="nav__link">
+                <i class='bx bxs-cog nav__icon'></i>Compétences
+              </a>
+            </li>
 
-                                <h1 class="home__title">Julien <span class=lastname>TROGNON</span></h1>
-                                <h3 class="home__profession">Computer Science Student</h3>
+            <!-- <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class='bx bxs-medal nav__icon' ></i>Certificates
+              </a>
+            </li> -->
 
-                                <!-- Button to generate and download the pdf. Available for desktop. -->
-                                <div>
-                                    <a href="assets/pdf/CVjlntrog.pdf" download="" class="home__button-mobile">Download</a>
-                                </div>
-                            </div>
+            <!-- <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class='bx bx-link-alt nav__icon'></i>References
+              </a>
+            </li> -->
+          </ul>
+        </div>
 
-                            <div class="home__adress bd-grid">
-                                <!-- <span class="home__information">
-                                    <i class='bx bxs-map home__icon'></i> 8 rue des vaux-monneuses, 78711 Mantes-la-Ville
-                                </span> -->
-                                <span class="home__information">
-                                    <i class='bx bxs-envelope home__icon'></i> pro.jtrog@gmail.com
-                                </span>
-                                <span class="home__information">
-                                    <i class='bx bxs-phone home__icon'></i> 06 84 25 72 76
-                                </span>
-                            </div>
-
-                            <!-- Theme change button -->
-                            <i class='bx bxs-moon change-theme' title="Theme" id="theme-button"></i>
-
-                            <!-- Button to generate and download the pdf. Only available for mobile. -->
-                            <i class='bx bxs-download generate-pdf' title="Generate PDF" id="resume-button"></i>
-                        </h2>
-                    </section>          
-                    
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        <h2 class="section-title">SOCIAL</h2>
-                        <div class="social__container bd-grid">
-                            <a href="https://www.linkedin.com/in/julien-trognon-283754164/" target="_blank" class="social__link">
-                                <i class='bx bxl-linkedin-square social__icon' ></i> LinkedIn
-                            </a>
-                            <a href="https://github.com/JulienTrognon" target="_blank" class="social__link">
-                                <i class='bx bxl-github social__icon' ></i> GitHub
-                            </a>
-                        </div>
-                    </section>
-
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        <h2 class="section-title">Profile</h2>
-
-                        <p class="profile__description">
-                            <i class='bx bxs-quote-left'></i>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus suscipit perspiciatis! Temporibus saepe quisquam sint blanditiis doloremque nihil debitis, ratione eaque excepturi laborum, placeat ipsam unde neque voluptate voluptas. Voluptatibus cum odit rem impedit eveniet, recusandae excepturi illum voluptate laborum porro natus eius modi itaque minima, eligendi dolor mollitia.
-                        </p>
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        <h2 class="section-title">Education</h2>
-
-                        <div class="education__container bd-grid">
-                            <div class="education__content">
-                                <div class="timeline">
-                                    <span class="education__bullet"></span>
-                                    <span class="education__line"></span>
-                                </div>
-
-                                <div class="education__data  bd-grid">
-                                    <h3 class="education__title">Licence 3 Informatique Générale</h3>
-                                    <span class="education__place">Université Paris Cité, campus Gd Moulins</span>
-                                    <span class="education__year">2020 - 2024</span>
-                                </div>
-                            </div>
-                            
-                            <div class="education__content ent">
-                                <div class="timeline">
-                                    <span class="education__bullet"></span>
-                                    <!-- <span class="education__line "></span> -->
-                                </div>
-
-                                <div class="education__data  bd-grid">
-                                    <h3 class="education__title">Licence Musique et Métiers du Son</h3>
-                                    <span class="education__place">Université Gustave Eiffel</span>
-                                    <span class="education__year">2017 - 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">Skills</h2>
-
-                        <div class="skills__content bd-grid">
-                            <ul class="skills__data">
-                                <li class="skill__name">
-                                    <i class='bx bxl-python' ></i>
-                                    <span class="skill__text">
-                                        Python
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxl-java' ></i>
-                                    <span class="skill__text">
-                                        Java
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bx-code-curly' ></i>
-                                    <span class="skill__text">
-                                        C
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bx-code-curly' ></i>
-                                    <span class="skill__text">
-                                        Ocaml
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxs-terminal' ></i>
-                                    <span class="skill__text">
-                                        Bash
-                                    </span>
-                                </li>
-                            </ul>
-
-                            <ul class="skills__data">
-                                <li class="skill__name">
-                                    <i class='bx bxl-html5' ></i> 
-                                    <span class="skill__text">
-                                        HTML
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxl-css3' ></i> 
-                                    <span class="skill__text">
-                                        CSS
-                                    </span>
-                                </li>
-                                
-                                <li class="skill__name">
-                                    <i class='bx bxl-javascript' ></i> 
-                                    <span class="skill__text">
-                                        Javascript
-                                    </span>
-                                </li>
-                                
-                                <li class="skill__name">
-                                    <i class='bx bxs-data' ></i> 
-                                    <span class="skill__text">
-                                        SQL
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxl-php' ></i>
-                                    <span class="skill__text">
-                                        PHP
-                                    </span>
-                                </li>
-                            </ul>
-
-                            <ul class="skills__data">
-                                <li class="skill__name">
-                                    <i class='bx bxl-jquery' ></i>
-                                    <span class="skill__text">
-                                        JQuery
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxl-nodejs' ></i> 
-                                    <span class="skill__text">
-                                        Node.js
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxl-bootstrap' ></i> 
-                                    <span class="skill__text">
-                                        Bootstrap
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxl-graphql'></i> 
-                                    <span class="skill__text">
-                                        OOP
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxs-pencil' ></i> 
-                                    <span class="skill__text">
-                                        UI design
-                                    </span>
-                                </li>
-                            </ul>
-                            
-                            <ul class="skills__data">
-                                <li class="skill__name">
-                                    <i class='bx bxs-speaker'></i> 
-                                    <span class="skill__text">
-                                        Music Production
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxs-palette' ></i> 
-                                    <span class="skill__text">
-                                        Adobe Photoshop
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxs-pen' ></i> 
-                                    <span class="skill__text">
-                                        Adobe Illustrator
-                                    </span>
-                                </li>
-                                <li class="skill__name">
-                                    <i class='bx bxs-film' ></i> 
-                                    <span class="skill__text">
-                                        Video Editing
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-
-                </div>
-
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        <h2 class="section-title">Experience</h2>
-                        <div class="experience__container ainer bd-grid">
-                            <div class="experience__content">
-                                <div class="timeline">
-                                    <span class="experience__bullet"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-
-                                <div class="experience__data  bd-grid">
-                                    <h3 class="experience__title">Préparateur de commandes</h3>
-                                    <span class="experience__place">Auchan Retail Mantes</span>
-                                    <span class="experience__year">Sept. 2022 - Juin 2023</span>
-                                    <span class="experience__desc">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis error exercitationem, numquam accusamus libero laudantium vel unde.
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="experience__content ent">
-                                <div class="timeline">
-                                    <span class="experience__bullet"></span>
-                                    <!-- <span class="experience__line "></span> -->
-                                </div>
-
-                                <div class="experience__data  bd-grid">
-                                    <h3 class="experience__title">Stage</h3>
-                                    <span class="experience__company">Entreprise</span>
-                                    <span class="experience__year">20XX - 20XX</span>
-                                    <span class="experience__desc">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis error exercitationem, numquam accusamus libero laudantium vel unde.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        <h2 class="section-title">Certificates</h2>
-                        <div class="certificate__container bd-grid">
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">Permis B</h3>
-                                <div class="certificate__year">2021</div>
-                            </div>
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">Diplôme de Licence</h3>
-                                <div class="certificate__year">2020</div>
-                                <p class="certificate__description">LACT mention Musique et Métiers du Son, parcours Informatique et Composition</p>
-                            </div>
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">Bac S</h3>
-                                <div class="certificate__year">2017</div>
-                                <p class="certificate__description">option SVT</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        <h2 class="section-title">References</h2>
-                        <div class="references__container bd-grid">
-                            <div class="references__content">
-                                <span class="references__subtitle">Sr. Director</span>
-                                <h3 class="references__title">Mr. Clay Doe</h3>
-                                <ul class="reference__contact">
-                                    <li>
-                                        <i class='bx bxs-envelope'></i> 06 55 55 55 55
-                                    </li>
-                                    <li>
-                                        <i class='bx bxs-phone'></i> user@email.com
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="references__content">
-                                <span class="references__subtitle">Mag. Developer</span>
-                                <h3 class="references__title">Mr. Ray Doe</h3>
-                                <ul class="reference__contact">
-                                    <li>
-                                        <i class='bx bxs-envelope'></i> 06 55 55 55 55
-                                    </li>
-                                    <li>
-                                        <i class='bx bxs-phone'></i> user@email.com
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section" id="languages">
-                        <h2 class="section-title">Languages</h2>
-                        <div class="languages__container">
-                            <ul class="languages__content bd-grid">
-                                <li class="languages__name">
-                                    <span class="languages__bullet"></span> French
-                                </li>
-                                <li class="languages__name">
-                                    <span class="languages__bullet"></span> English
-                                </li>
-                                <li class="languages__name">
-                                    <span class="languages__bullet"></span> Spanish
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </section>
-                    
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        <h2 class="section-title">Interests</h2>
-                        <div class="interests__container bd-grid">
-                            <div class="interests__content">
-                                <i class="bx bx-headphone interests__icon"></i>
-                                <span class="interests__name">Music</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class="bx bx-joystick interests__icon"></i>
-                                <span class="interests__name">Video Games</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class="bx bx-map-alt interests__icon"></i>
-                                <span class="interests__name">Travelling</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class="bx bx-dish interests__icon"></i>
-                                <span class="interests__name">Cooking</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class="bx bx-chip interests__icon"></i>
-                                <span class="interests__name">Hardware</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class="bx bx-wrench interests__icon"></i>
-                                <span class="interests__name">DIY</span>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>        
-        </main>
-
-
-        <!--========== SCROLL TOP ==========-->
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
-        </a>
+        <a href="#" class="nav__logo">LYNA</a>
         
+        <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bxs-grid-alt'></i>
+        </div>
+      </nav>
+    </header>
 
-        <!--========== HTML2PDF ==========-->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <!-- All elements within this div is generated in PDF -->
+    <main class="l-main" id="area-cv">
+      <div class="resume">
+        <div class="resume__top">
+          <!-- Theme change button -->
+          <i class='bx bxs-moon change-theme' title="Theme" id="theme-button"></i>
+    
+          <!-- Button to generate and download the pdf. Only available for mobile. -->
+          <i class='bx bxs-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+          
+          <div class="resume__top__sections">
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+              <div class="img__container">
+                <img src="assets/img/profilepic-rounded.png" alt="profile picture" class="home__img">
+              </div>
+              <div class="home__container section">
+                <div class="home__data">
+                  <div class="name__container">
+                    <h1 class="home__title">Julien<br><span class=lastname>TROGNON</span></h1>
+                    <h3 class="home__profession">Recherche Alternance Dev / Data</h3>
+                  </div>
+  
+                  <!-- Button to generate and download the pdf. Available for desktop. -->
+                  <div>
+                    <a href="assets/pdf/CVJulienTROGNON.pdf" download="" class="home__button-mobile">TÉLÉCHARGER</a>
+                  </div>
+                </div>
+                
+                <div class="home__details">
+                  <div class="home__address">
+                    <span class="home__information">
+                      <a href=mailto:“pro.lynab@gmail.com”>
+                        <i class='bx bxs-envelope home__icon'></i> 
+                        pro.jtrog@gmail.com
+                      </a>
+                    </span>
+                    <span class="home__information">
+                      <a href="tel:+33665363242">
+                        <i class='bx bxs-phone home__icon'></i>
+                        06 84 25 82 76
+                      </a>
+                    </span>
+                    <span class="home__information__text">
+                      <i class='bx bxs-envelope home__icon'></i> 
+                        pro.jtrog@gmail.com
+                    </span>
+                    <span class="home__information__text">
+                      <i class='bx bxs-phone home__icon'></i>
+                      06 84 25 82 76
+                    </span>
+                  </div>
+                  <div class="socials">
+                    <span class="home__information">
+                      <a href="https://www.linkedin.com/in/julien-trognon-283754164" target="_blank" class="social__link">
+                        <i class='bx bxl-linkedin-square social__icon' ></i> 
+                        LinkedIn
+                      </a>
+                    </span>
+                    <span class="home__information">
+                      <a href="https://github.com/LynaBzd" target="_blank" class="social__link">
+                        <i class='bx bxl-github social__icon' ></i> 
+                        GitHub
+                      </a>
+                    </span>
+                    <span class="home__information__text">
+                      <i class='bx bxl-linkedin-square social__icon' ></i> @julien-trognon-283754164
+                    </span>
+                    <span class="home__information__text">
+                      <i class='bx bxl-github social__icon' ></i> @JulienTrognon
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section> 
+          </div>
+        </div>
+
+        <div class="resume__main bd-container">
+          <div class="resume__left">
+            <div class="resume__left__sections">
+              <!--========== PROJETS ==========-->
+            <section class="projects section" id="education">
+              <h2 class="section-title">
+                <i class='bx bx-edit-alt'></i>
+                Projets Universitaires
+              </h2>
+  
+              <div class="education__container bd-grid">
+                <div class="education__content">
+                  <div class="education__data  bd-grid">
+                    <h3 class="education__title">
+                      Site Web - Réseau Social de Musique
+                    </h3>
+                    <span class="experience__desc">
+                      HTML, CSS, PHP, SQL. Bases du dev web : formulaires, base de données, cookies, gestion des utilisateurs.
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="education__content">
+                  <div class="education__data  bd-grid">
+                    <h3 class="education__title">
+                      Gestionnaire de logs Git - histoGraph
+                    </h3>
+                    <span class="experience__desc">
+                      Git, Java, HTML, CSS, Scrum. Projet à 5 pour apprendre les bases de gestion de projet avec Git et la méthode Scrum.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="education__content">
+                  <div class="education__data  bd-grid">
+                    <h3 class="education__title">
+                      Jeu OOP - Colons de Catane
+                    </h3>
+                    <span class="experience__desc">
+                      Java, Swing. Bases de POO (Encapsulation, Héritage, Polymorphisme) en développant un jeu de plateau.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="education__content">
+                  <div class="education__data  bd-grid">
+                    <h3 class="education__title">
+                      Projet Long en Équipe - Jeu Abalone
+                    </h3>
+                    <span class="experience__desc">
+                      Java, Swing, Gradle, Git. Mise à l'épreuve les compétences acquises
+                      de programmation et de travail en équipe.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="education__content">
+                  <div class="education__data  bd-grid">
+                    <h3 class="education__title">
+                      Programmation Système - Shell Unix : JSH
+                    </h3>
+                    <span class="experience__desc">
+                      C, Unix. Entrée utilisateur (parsing), système de fichiers, processus. Gestion d'un projet long en équipe.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="education__content">
+                  <div class="education__data  bd-grid">
+                    <h3 class="education__title">
+                      Logique de Premier Ordre - Synthèse d'Invariants
+                    </h3>
+                    <span class="experience__desc">
+                      Programmation Fonctionnelle, Ocaml. Mini-projet : automatisation de la génération d'un 
+                      code SMT-LIB pour le problème de synthèse d'invariants de programme.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="education__content">
+                  <div class="education__data  bd-grid">
+                    <h3 class="education__title">
+                      Progammation Fonctionnelle - ADN & Exp. Rationnelles
+                    </h3>
+                    <span class="experience__desc">
+                      Programmation Fonctionnelle, Ocaml. Récursivité (terminale) dans le paradigme fonctionnel.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="education__content">
+                  <div class="education__data  bd-grid">
+                    <h3 class="education__title">
+                      Jeu OOP avancé - clone de Slither.io
+                    </h3>
+                    <span class="experience__desc">
+                      Java, Gradle, JavaFX, JUnit5. Design pattern et programmation concurrente.
+                      But : maintenabilité, fiabilité et testabilité.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+              
+              <!--========== SKILLS ==========-->
+              <section class="skills section" id="skills">
+                <h2 class="section-title">
+                  <i class='bx bx-cog' ></i>
+                  Skills
+                </h2>
+    
+                <div class="skills__content">
+                  <ul class="skills__data">
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-python' ></i>
+                        <span class="skill__text">
+                          Python
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-java' ></i>
+                        <span class="skill__text">
+                          Java
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bx-code-curly' ></i>
+                        <span class="skill__text">
+                          C
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bx-code-curly' ></i>
+                        <span class="skill__text">
+                          Ocaml
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxs-terminal' ></i>
+                        <span class="skill__text">
+                          Bash
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-html5' ></i> 
+                        <span class="skill__text">
+                          HTML
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-css3' ></i> 
+                        <span class="skill__text">
+                          CSS
+                        </span>
+                      </div>
+                    </li>
+                    
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-javascript' ></i> 
+                        <span class="skill__text">
+                          Javascript
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-jquery' ></i> 
+                        <span class="skill__text">
+                          JQuery
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-nodejs' ></i> 
+                        <span class="skill__text">
+                          Node.js
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-bootstrap' ></i> 
+                        <span class="skill__text">
+                          Bootstrap
+                        </span>
+                      </div>
+                    </li>
+                    
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxs-data' ></i> 
+                        <span class="skill__text">
+                          SQL
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-postgresql' ></i> 
+                        <span class="skill__text">
+                          PostgreSQL
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-php' ></i>
+                        <span class="skill__text">
+                          PHP
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxl-graphql'></i> 
+                        <span class="skill__text">
+                          OOP
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bx-sitemap'></i> 
+                        <span class="skill__text">
+                          UML
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxs-image' ></i> 
+                        <span class="skill__text">
+                          Photoshop
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxs-pen' ></i> 
+                        <span class="skill__text">
+                          Illustrator
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxs-film' ></i> 
+                        <span class="skill__text">
+                          Premiere Pro
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bx-headphone' ></i> 
+                        <span class="skill__text">
+                          Ableton Live
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <i class='skill__icon bx bxs-calendar'></i>
+                        <span class="skill__text">
+                          Scrum
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <!--========== SOFT SKILLS ==========-->
+              <section class="soft-skills skills section" id="softskills">
+                <h2 class="section-title">
+                  <i class='bx bx-brain' ></i>
+                  Soft Skills
+                </h2>
+
+                <div class="skills__content">
+                  <ul class="skills__data">
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <span class="skill__text">
+                          Travail en Équipe
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <span class="skill__text">
+                          Adaptabilité
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <span class="skill__text">
+                          Créativité
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <span class="skill__text">
+                          Rigueur
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <span class="skill__text">
+                          Curiosité
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <span class="skill__text">
+                          Esprit Critique
+                        </span>
+                      </div>
+                    </li>
+                    <li class="skill__name">
+                      <div class="skill__box">
+                        <span class="skill__text">
+                          Empathie
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+  
+          <div class="resume__right">
+            <div class="resume__right__sections">
+              <!--========== PROFILE ==========-->
+              <section class="profile section" id="profile">
+                <!-- <h2 class="section-title">
+                  <i class='bx bx-face'></i>
+                  Profil
+                </h2> -->
+    
+                <p class="profile__description">
+                  <i class='bx bxs-quote-left profile__icon'></i>
+                  Entrant en <strong>master d'informatique</strong>, je recherche une <strong>alternance</strong> 
+                  pour allier les <strong>ressources académiques</strong> 
+                  et la <strong>pratique professionnelle</strong>.
+                  Souhaitant valoriser mes acquis et enrichir ma formation, 
+                  je recherche une entreprise où <strong>contribuer efficacement</strong>.
+                  Curieux, rigoureux et créatif, je suis à l'aise avec 
+                  le travail en équipe et en autonomie.
+                </p>
+              </section>
+
+              <!--========== SOCIAL ==========-->
+              <!-- <section class="social section" id="social">
+                <h2 class="section-title">
+                  <i class='bx bx-network-chart' ></i>
+                  Réseaux
+                </h2>
+                <div class="social__container">
+                  <a href="https://www.linkedin.com/in/lyna-bouzid-a371a22a4" target="_blank" class="social__link">
+                    <i class='bx bxl-linkedin-square social__icon' ></i> LinkedIn
+                  </a>
+                  <a href="https://github.com/LynaBzd" target="_blank" class="social__link">
+                    <i class='bx bxl-github social__icon' ></i> GitHub
+                  </a>
+                </div>
+              </section> -->
+              <div class="skills__content">
+                <ul class="skills__data">
+                  <div class="skill__box permis">
+                    <i class='skill__icon bx bxs-car' ></i>
+                    <span class="skill__text">
+                      Permis B
+                    </span>
+                  </div>
+                </ul>
+              </div>
+
+              <!--========== EDUCATION ==========-->
+              <section class="education section" id="education">
+                <h2 class="section-title">
+                  <i class='bx bx-book-bookmark' ></i>
+                  Formation
+                </h2>
+    
+                <div class="education__container bd-grid">
+                  <div class="education__content">
+                    <div class="timeline">
+                      <span class="education__bullet"></span>
+                      <span class="education__line"></span>
+                    </div>
+    
+                    <div class="education__data  bd-grid">
+                      <h3 class="education__title">
+                        <a href=
+                        "https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-technologies-sante-STS/informatique-K2VO937D/licence-informatique-parcours-informatique-generale-JRKM8J1B.html" 
+                        target="_blank">
+                          Licence Informatique Générale
+                          <span class="en-cours">en cours</span>
+                        </a>
+                        <span class="no-link">
+                          Licence Informatique Générale
+                          <span class="en-cours">en cours</span>
+                        </span>
+                      </h3>
+                      <span class="education__place">Université Paris Cité, campus Gd Moulins</span>
+                      <span class="education__year">2020 - 2024</span>
+                    </div>
+                  </div>
+                  
+                  <div class="education__content ent">
+                    <div class="timeline">
+                      <span class="education__bullet"></span>
+                      <!-- <span class="education__line "></span> -->
+                    </div>
+    
+                    <div class="education__data  bd-grid">
+                      <h3 class="education__title">
+                        <a href=
+                        "https://formations.univ-gustave-eiffel.fr/licence/detail/musique-et-metiers-du-son-244" 
+                        target="_blank">
+                          Licence Musique et Métiers du Son
+                        </a>
+                        <span class="no-link">
+                          Licence Musique et Métiers du Son
+                        </span>
+                      </h3>
+                    <span class="education__place">Université Gustave Eiffel</span>
+                    <span class="education__year">2017 - 2020</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+    
+              <!--========== EXPERIENCE ==========-->
+              <section class="experience section" id="experience">
+                <h2 class="section-title">
+                  <i class='bx bx-buildings'></i> Expérience
+                </h2>
+                <div class="experience__container bd-grid">
+                  <div class="experience__content">
+                    <div class="timeline">
+                      <span class="experience__bullet"></span>
+                      <!-- <span class="experience__line"></span> -->
+                    </div>
+    
+                    <div class="experience__data  bd-grid">
+                      <h3 class="experience__title">Préparateur de commandes</h3>
+                      <span class="experience__place">Auchan Retail Mantes</span>
+                      <span class="experience__year">Sept. 2022 - Juin 2023</span>
+                      <span class="experience__desc">
+                        Job Étudiant. Relation client, préparation des commandes, gestion des stocks.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!--========== LANGUAGES ==========-->
+              <section class="languages section" id="languages">
+                <h2 class="section-title">
+                  <i class='bx bx-conversation' ></i>
+                  Langues
+                </h2>
+                <div class="languages__container">
+                  <ul class="languages__content">
+                    <li class="languages__name">
+                      <div class="languages__box">
+                        Français
+                        <i class='bx bxs-circle languages__level'></i>
+                      </div>
+                    </li>
+                    <li class="languages__name">
+                      <div class="languages__box">
+                        Anglais
+                        <i class='bx bxs-circle-three-quarter languages__level'></i>
+                      </div>
+                    </li>
+                    <li class="languages__name">
+                      <div class="languages__box">
+                        Espagnol
+                        <i class='bx bxs-circle-quarter languages__level'></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <!--========== INTERESTS ==========-->
+              <section class="interests section" id="interests">
+                <h2 class="section-title">
+                  <i class='bx bx-coffee'></i>
+                  Loisirs
+                </h2>
+                <div class="interests__container bd-grid">
+                  <div class="interests__content">
+                    <i class="bx bxs-piano interests__icon"></i>
+                    <span class="interests__name">Musique</span>
+                  </div>
+                  <div class="interests__content">
+                    <i class="bx bx-trip interests__icon"></i>
+                    <span class="interests__name">Voyage</span>
+                  </div>
+                  <div class="interests__content">
+                    <i class="bx bxs-joystick interests__icon"></i>
+                    <span class="interests__name">Jeux Vidéo</span>
+                  </div>
+                  <div class="interests__content">
+                    <i class='bx bxs-dish interests__icon'></i>
+                    <span class="interests__name">Cuisine</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>        
+    </main>
+
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

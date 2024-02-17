@@ -31,8 +31,8 @@ function scrollActive(){
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        const sectionTop = current.offsetTop - 250
+        let sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
@@ -71,14 +71,18 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
+function changeTheme(){
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    changeTheme()
 })
 
 /*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/ 
@@ -95,15 +99,17 @@ function removeScale(){
 /*==================== GENERATE PDF ====================*/ 
 // PDF generated area
 
-let areaCv= document.getElementById('area-cv')
+let areaCv = document.getElementById('area-cv')
 let resumeButton = document.getElementById('resume-button')
 
 // Html2pdf options
 let opt = {
-    margin : 1,
-    filename: 'myCV.pdf',
-    image : {type : 'jpeg', quality : 0.98},
-    html2canvas :{scale : 4},
+    // margin : 1,
+    margin : 0,
+    filename: 'CVJulienTROGNON.pdf',
+    image : {type : 'jpeg', quality : 0.92},
+    // image : {type : 'jpeg', quality : 0.98},
+    html2canvas : {scale : 3, dpi : 192},
     jsPDF : {format : 'a4', orientation : 'portrait'}
 }
 
@@ -114,14 +120,25 @@ function generateResume(){
 
 // When the button is clicked, it executes the three functions
 
-    resumeButton.addEventListener('click', () => {
-        
-        // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
-        scaleCv()
-        
-        // 2. The PDF is generated
-        generateResume()
-        
-        // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
-        setTimeout(removeScale, 5000)
-    })
+resumeButton.addEventListener('click', () => {
+    initial = getCurrentTheme()
+    
+    // 0. Toggle to light theme if necessary
+    if (initial === 'dark') {
+        changeTheme()
+    }
+    
+    // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
+    scaleCv()
+    
+    // 2. The PDF is generated
+    generateResume()
+    
+    // 3. The .scale-cv class is removed from the body after 3 seconds to return to normal size.
+    setTimeout(removeScale, 5000)
+
+    // 4. The theme is changed back to the initial state
+    if (initial === 'dark') {
+        setTimeout(changeTheme, 5000)
+    }
+})

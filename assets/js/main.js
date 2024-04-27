@@ -107,9 +107,9 @@ let opt = {
     // margin : 1,
     margin : 0,
     filename: 'CVJulienTROGNON.pdf',
-    image : {type : 'jpeg', quality : 0.92},
+    image : {type : 'jpeg', quality : 0.96},
     // image : {type : 'jpeg', quality : 0.98},
-    html2canvas : {scale : 3, dpi : 192},
+    html2canvas : {scale : 4, dpi : 192},
     jsPDF : {format : 'a4', orientation : 'portrait'}
 }
 

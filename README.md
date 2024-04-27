@@ -1,22 +1,17 @@
-Web CV Resume
+Web CV Resume downloadable PDF
 ------------------------
 
-Personal CV made with source code instead of Word, Indesign, or Photoshop.
-The goal is to make it easier to edit and share as well as to improve my skills.
+## Responsive Resume Cv Smith
 
-![preview CV](preview.jpg)
-
-## Web CV
-
-- HTML CSS and JavaScript.
-- Responsive, including mobile and desktop version.
-- Mobile mode has a navigation menu to easily navigate through sections.
-- Some external links related to the content (places, projects).
-- Light and dark theme.
-- Export resume website to print ready PDF.
+- Responsive Resume CV Website Using HTML CSS and JavaScript
+- Contains a mobile navigation with icons.
+- Smooth scrolling in each section in mobile version.
+- Includes a light and dark theme.
+- Export resume website to PDF.
+- Developed using the Mobile First methodology, then for desktop.
+- Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 
 ## Credit
-
 Made using [Bedimcode](https://github.com/bedimcode) template
 and his [Youtube](https://youtu.be/oYjseP_Qhv4) tutorial.
